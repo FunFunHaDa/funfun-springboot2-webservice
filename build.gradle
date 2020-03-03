@@ -6,7 +6,7 @@ buildscript {
         mavenCentral()
         jcenter()
     }
-    dependencies {2
+    dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
@@ -34,6 +34,6 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     runtime('com.h2database:h2')
-    compileOnly('org.projectlombok:lombok')
+    compile('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
