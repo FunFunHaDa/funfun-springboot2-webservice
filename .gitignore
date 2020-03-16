@@ -27,3 +27,6 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### personal information ###
+application-oauth.properties

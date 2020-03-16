@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
@@ -26,6 +27,7 @@ public class HelloControllerTest {
     private MockMvc mvc;
 
     @Test
+    @WithMockUser(roles="USER")
     public void hello_리턴된다() throws Exception{
         String hello = "hello";
 
@@ -35,6 +37,7 @@ public class HelloControllerTest {
     }
 
     @Test
+    @WithMockUser(roles="USER")
     public void helloDto가_리턴된다() throws Exception{
         String name = "hello";
         int amount = 1000;
