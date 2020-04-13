@@ -6,6 +6,9 @@ branches:
   only:
     - master
 
+before_install:
+  - chmod +x gradlew
+
 # Travis CI 서버의 Home
 cache:
   directories:
@@ -19,3 +22,4 @@ notifications:
   email:
     recipients:
       - kjhkjh0929@gmail.com
+      -
