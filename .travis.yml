@@ -40,7 +40,7 @@ deploy:
     key: funfun-springboot2-webservice.zip # 빌드 파일을 압축해서 전달
     bundle_type: zip
     application: funfun-springboot2-webserviceS # 웹 콘솔에서 등록한 CodeDeploy 애플리케이션 이름
-    deployment_group: funfn-springboot2-webservice-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹..api_key:
+    deployment_group: funfun-springboot2-webservice-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹..api_key:
     region: ap-northeast-2
     wait-until-deployed: true
 
