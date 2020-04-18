@@ -17,7 +17,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group 'com.funfunhada.book'
-version '1.0.1-SNAPSHOT'
+version '1.0.1-SNAPSHOT' +new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = 1.8
 
 repositories {
@@ -38,6 +38,4 @@ dependencies {
     testCompile('org.springframework.security:spring-security-test')
     compile('org.springframework.session:spring-session-jdbc')
     compile("org.mariadb.jdbc:mariadb-java-client")
-    implementation 'junit:junit:4.12'
-    implementation 'junit:junit:4.12'
 }
